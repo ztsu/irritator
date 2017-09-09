@@ -1,0 +1,34 @@
+{
+    "name": "ztsu/irritator",
+    "description": "Schema-oriented assertion library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Golovnya",
+            "email": "alexey.golovnya@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ztsu\\Irritator\\": "src/"
+        },
+        "files": [
+            "src/shortcuts.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ztsu\\Irritator\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit -c phpunit.dist.xml"
+    }
+}
